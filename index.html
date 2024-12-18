@@ -33,9 +33,23 @@
     <nav class="navbar navbar-dark bg-dark">
       <a href="/" class="navbar-brand">Marvel APP</a>
     </nav>
-    <div class="grid-container">
-      <div class="grid-item" id="marvel-row"></div>
-    </div>
+    <br />
+    <h1>Search for a superheroe</h1>
+    <form id="characterForm">
+      <input type="text" id="heroName" placeholder="Hero Name" required />
+      <input type="text" id="heroDescription" placeholder="Description" />
+      <input type="text" id="thumbnailPath" placeholder="Thumbnail Path" />
+      <input
+        type="text"
+        id="thumbnailExtension"
+        placeholder="Thumbnail Extension"
+      />
+      <button type="submit">Add Character</button>
+    </form>
+    <br />
+
+    <div class="grid-container" id="marvel-row"></div>
+
     <div class="herocontainer"></div>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
